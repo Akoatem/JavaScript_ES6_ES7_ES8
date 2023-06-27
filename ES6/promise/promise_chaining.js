@@ -30,6 +30,7 @@ fetchData()
             resolve({parsed: parseOutPut});
         },3000);
     });
+
   }
 
   // let echo data
@@ -43,5 +44,7 @@ fetchData()
 
   // chaining the promises
 
-  fetchData().then(parseData).then(echoData);
+  fetchData().then(parseData).then(echoData).catch(error =>{
+    console.error(error);
+  });
 
