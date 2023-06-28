@@ -24,6 +24,6 @@ let fetchSomeData = new Promise((resolve, reject) =>{
 fetchSomeData.then(fetchedData =>{
     console.log('then:', fetchedData);
 }).catch(err =>{ //if for some reason there is rejection, this will execute
-    console.error('ecatch:', err);
+    console.error('catch:', err);
 
 })
